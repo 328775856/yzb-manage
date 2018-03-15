@@ -31,12 +31,12 @@
                     <br>
                 </div>
                 <div class="ui-block-c">
-                    <a href="#" data-role="button" data-icon='arrow-d' data-iconpos="top">账户信息/提成</a>
+                    <a href="#pagefour" data-role="button" data-icon='arrow-d' data-iconpos="top">账户信息/提成</a>
                     <br>
                 </div>
             </div>
             <div class="ui-grid-b">
-                <div class="ui-block-a"><a href="#" data-role="button" data-icon='navigation' data-iconpos="top">路线推广</a>
+                <div class="ui-block-a"><a href="http://xiamen.cncn.com/sanriyou/" data-role="button" data-icon='navigation' data-iconpos="top">路线推广</a>
                     <br>
                 </div>
                 <div class="ui-block-b">
@@ -44,7 +44,7 @@
                     <br>
                 </div>
                 <div class="ui-block-c">
-                    <a href="#" data-role="button" data-icon='mail' data-iconpos="top">导游信息录入</a>
+                    <a href="#dialog" data-role="button" data-icon='mail' data-iconpos="top">游客信息录入</a>
                     <br>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     <br>
                 </div>
                 <div class="ui-block-b">
-                    <a href="#" data-role="button" data-icon='comment' data-iconpos="top">旅行社信息</a>
+                    <a href="" data-role="button" data-icon='comment' data-iconpos="top">旅行社信息</a>
                     <br>
                 </div>
                 <div class="ui-block-c">
@@ -65,23 +65,23 @@
     </div>
         <div data-role="page" id="pagetwo" data-theme="a">
         <div data-role="header">
-            <h1>游中宝导游管理/列表/总表</h1>
+            <h1>游中宝旅行社端导游管理/列表/总表</h1>
         </div>
         <div data-role="main">
             <table data-role="table" class="ui-responsive ui-shadow">
                 <thead>
                     <tr>
-                        <td>机号</td>
-                        <td>支付状态</td>
-                        <td>总机状态</td>
-                        <td>用户信息</td>
+                        <td>编号</td>
+                        <td>姓名</td>
+                        <td>导游证</td>
+                        <td>手机号</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>已支付</td>
-                        <td>开</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
                         <td>xxx</td>
                     </tr>
                 </tbody>
@@ -92,6 +92,93 @@
     <div data-role="page" id="pagethree" data-theme="a">
         <div data-role="header">
             <h1>游中宝导游状态/导游/路径查看/位置查看（工作中）</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>编号</td>
+                        <td>姓名</td>
+                        <td>状态</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.history.go(-1)">返回</button>
+        </div>
+    </div>
+    <div data-dialog="true" id="dialog">
+        <div data-role="header">
+            <h1>请您输入添加详情</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>姓名</td>
+                        <td>手机号</td>
+                        <td>身份证</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="date">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="javascript:window.location.href='#pagethree'">确定</button>
+        </div>
+        <div data-role="footer">
+            <h1>厦门游中宝</h1>
+        </div>
+    </div>
+    <div data-role="page" id="pagethree" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝旅行社端游客信息</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>姓名</td>
+                        <td>手机号</td>
+                        <td>身份证</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.location.href='travel_agency.html'">返回</button>
+        </div>
+    </div>
+     <div data-role="page" id="pagefour" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝旅行社端账户信息</h1>
         </div>
         <div data-role="main">
             <table data-role="table" class="ui-responsive ui-shadow">
@@ -115,7 +202,6 @@
             <button onclick="window.history.go(-1)">返回</button>
         </div>
     </div>
-
 </body>
 <script>
 $(function() {
