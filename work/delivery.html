@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang='zh-cmn-Hans'>
+
+<head>
+    <meta charset="utf-8">
+    <title>delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="pageone" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝配送端</h1>
+        </div>
+        <div data-role="content">
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><a href="#pagetwo" data-role="button" data-icon='info' data-iconpos="top">订单信息（未处理）</a>
+                    <br>
+                </div>
+                <div class="ui-block-b" id="b">
+                    <a id="build" href="#dialog" data-role="button" data-icon='gear' data-iconpos="top">设备组建</a>
+                    <br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#myPopup" data-role="button" data-rel="popup" data-icon='arrow-d' data-iconpos="top" data-position-to="#b">设备返还/扫主机状态</a>
+                    <br>
+                    <div data-role="popup" id="myPopup" style="width: 100%;">
+                        <p>主机状态为</p>
+                        <select>
+                            <option disabled="" selected="selected">请选择</option>
+                            <option>损坏</option>
+                            <option>丢失</option>
+                            <option>赔偿</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><a href="#pagefour" data-role="button" data-icon='navigation' data-iconpos="top">运行订单</a>
+                    <br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="javascript:window.location.href='report_form.html'" data-role="button" data-icon='shop' data-iconpos="top">报表/提成</a>
+                    <br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button" data-icon='mail' data-iconpos="top">定价管理/押金（第三方权限）</a>
+                    <br>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><a id="apply" href="#dialogtwo" data-role="button" data-icon='location' data-iconpos="top">设备统计/报修状态（申请）</a>
+                    <br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" data-role="button" data-icon='comment' data-iconpos="top">关于我们</a>
+                    <br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button" data-icon='phone' data-iconpos="top">合作反馈</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="pagetwo" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝配送端未处理订单信息</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>时间</td>
+                        <td>数量</td>
+                        <td>送货地址</td>
+                        <td>价格</td>
+                        <td>押金</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.history.go(-1)">返回</button>
+        </div>
+    </div>
+    <div data-dialog="true" id="dialog">
+        <div data-role="header">
+            <h1>请您输入添加详情</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>时间</td>
+                        <td>数量</td>
+                        <td>送货地址</td>
+                        <td>价格</td>
+                        <td>押金</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="javascript:window.location.href='#pagethree'">确定</button>
+        </div>
+        <div data-role="footer">
+            <h1>厦门游中宝</h1>
+        </div>
+    </div>
+    <div data-role="page" id="pagethree" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝配送端设备组建账户信息</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>时间</td>
+                        <td>数量</td>
+                        <td>送货地址</td>
+                        <td>价格</td>
+                        <td>押金</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.location.href='delivery.html'">返回</button>
+        </div>
+    </div>
+    <div data-role="page" id="pagefour" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝配送端运行订单信息</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>时间</td>
+                        <td>数量</td>
+                        <td>送货地址</td>
+                        <td>价格</td>
+                        <td>押金</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.location.href='delivery.html'">返回</button>
+        </div>
+    </div>
+    <div data-dialog="true" id="dialogtwo">
+        <div data-role="header">
+            <h1>（报修）请您输入添加详情</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>时间</td>
+                        <td>数量</td>
+                        <td>订单号</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="javascript:window.location.href='#pagefive'">确定</button>
+        </div>
+        <div data-role="footer">
+            <h1>厦门游中宝</h1>
+        </div>
+    </div>
+    <div data-role="page" id="pagefive" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝配送端设备统计信息</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>设备型号</td>
+                        <td>数量</td>
+                        <td>设备状态</td>
+                        <td>报修详情</td>
+                        <td>订单号</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.location.href='delivery.html'">返回</button>
+        </div>
+    </div> 
+</body>
+<script>
+$(function() {
+
+    $('#apply').click(function() {
+        $('#dialog').hide();
+    })
+    $('#build').click(function() {
+        $('#dialogtwo').hide();
+    })
+
+    // setInterval(function(){
+    //     var hs=window.location.href;
+    //     hs=hs.slice(0,Number(hs.indexOf('#')));
+    //     console.log(hs);
+    //     history.pushState(null,null,hs)
+    //     window.location.reload();
+    // }, 1000)
+
+
+    $("#comfirm").click(function() {
+        if ($('#command').val() == 'daoyou') {
+            $("#myPopup").popup('close');
+        } else if ($('#command').val() == 'baidu') {
+            location.href = 'http://www.baidu.com';
+        } else {
+            $('#msg').html('输入不正确');
+        }
+    })
+})
+</script>
+
+</html>

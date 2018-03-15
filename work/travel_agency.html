@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html  lang='zh-cmn-Hans'>
+
+<head>
+    <meta charset="utf-8">
+    <title>travel_agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <div data-role="page" id="pageone" data-theme="a">
+        <div data-role="header">
+            
+            <h1>游中宝旅行社端</h1>
+        </div>
+        <div data-role="content">
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><a href="#pagetwo" data-role="button" data-icon='info' data-iconpos="top">导游管理</a>
+                    <br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#pagethree" data-role="button" data-icon='gear' data-iconpos="top">导游状态</a>
+                    <br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button" data-icon='arrow-d' data-iconpos="top">账户信息/提成</a>
+                    <br>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><a href="#" data-role="button" data-icon='navigation' data-iconpos="top">路线推广</a>
+                    <br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" data-role="button" data-icon='shop' data-iconpos="top">商品管理</a>
+                    <br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button" data-icon='mail' data-iconpos="top">导游信息录入</a>
+                    <br>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><a href="#" data-role="button" data-icon='location' data-iconpos="top">设备管理</a>
+                    <br>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" data-role="button" data-icon='comment' data-iconpos="top">旅行社信息</a>
+                    <br>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#" data-role="button" data-icon='phone' data-iconpos="top">联系方式</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div data-role="page" id="pagetwo" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝导游管理/列表/总表</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>机号</td>
+                        <td>支付状态</td>
+                        <td>总机状态</td>
+                        <td>用户信息</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>已支付</td>
+                        <td>开</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.history.go(-1)">返回</button>
+        </div>
+    </div>
+    <div data-role="page" id="pagethree" data-theme="a">
+        <div data-role="header">
+            <h1>游中宝导游状态/导游/路径查看/位置查看（工作中）</h1>
+        </div>
+        <div data-role="main">
+            <table data-role="table" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <td>价格管理</td>
+                        <td>历史订单</td>
+                        <td>提现</td>
+                        <td>银行账户</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="window.history.go(-1)">返回</button>
+        </div>
+    </div>
+
+</body>
+<script>
+$(function() {
+     
+       
+})
+</script>
+
+</html>
